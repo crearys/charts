@@ -3329,7 +3329,7 @@ receiveDistributor:
   replicaLabel: replica
   ## @param receiveDistributor.replicationFactor Thanos Receive replication-factor
   ##
-# replicationFactor: 1
+  replicationFactor: 1
   ##
   ## @param receiveDistributor.extraEnvVars Extra environment variables for Thanos Receive Distributor container
   ## e.g:
