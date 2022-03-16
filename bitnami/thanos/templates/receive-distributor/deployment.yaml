@@ -101,9 +101,7 @@ spec:
             - --label={{ .Values.receiveDistributor.replicaLabel }}="$(NAME)"
             - --label=receive="true"
             - --receive.hashrings-file=/var/lib/thanos-receive/hashrings.json
-            {{- if .Values.receiveDistributor.replicationFactor }}
             - --receive.replication-factor={{ .Values.receiveDistributor.replicationFactor }}
-            {{- end }}
             {{- if .Values.receiveDistributor.extraFlags }}
             {{- .Values.receiveDistributor.extraFlags | toYaml | nindent 12 }}
             {{- end }}
